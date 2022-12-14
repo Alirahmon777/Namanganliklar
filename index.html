@@ -11,6 +11,37 @@
   </head>
 
   <body>
+    <!-- modal -->
+
+    <input name="modal" id="modal__check" class="modal__check" type="radio" />
+    <input name="modal" id="modal__none" class="modal__none" type="radio" />
+    <div class="modal">
+      <div class="modal__wrapper">
+        <label for="modal__none">
+          <div class="modal__close">
+            <span></span>
+            <span></span></div
+        ></label>
+        <p class="modal__text">
+          Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых
+          последних новостей:
+        </p>
+        <a
+          class="modal__btn"
+          href="https://t.me/NAMANGANLIKLAR_UZ"
+          target="_blank"
+        >
+          <img
+            width="31"
+            src="./img/telegram.svg"
+            alt="telegram-icon"
+          />Подписаться
+        </a>
+      </div>
+    </div>
+
+    <!-- modal -->
+
     <header class="header">
       <div class="container">
         <div class="header__box">
@@ -24,16 +55,20 @@
             <p class="header__currency"><strong>P</strong> 138.26</p>
             <p class="header__currency"><strong>€</strong> 10988.72</p>
           </div>
-          <a class="header__link" href=""
-            ><img src="./img/telegram.svg" alt="telegram-icon" />Подписатья</a
-          >
+          <label for="modal__check">
+            <a class="header__link">
+              <img src="./img/telegram.svg" alt="telegram-icon" />Подписатья
+            </a>
+          </label>
         </div>
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
               <a class="item__link" href="./index.html">Узбекистана</a>
             </li>
-            <li class="header__item"><a class="item__link" href="./list.html">Мир</a></li>
+            <li class="header__item">
+              <a class="item__link" href="./list.html">Мир</a>
+            </li>
             <li class="header__item">
               <a class="item__link" href="./article.html">Экономика</a>
             </li>
@@ -67,6 +102,7 @@
         />
       </div>
     </header>
+
     <main class="main">
       <section class="covid">
         <div class="container">
@@ -387,12 +423,19 @@
       </section>
       <section class="container">
         <div class="adv__namanganliklar">
-          <img class="adv__phone-img" width="236" height="160" src="./img/phone.png" alt="phone" />
+          <img
+            class="adv__phone-img"
+            width="236"
+            height="160"
+            src="./img/phone.png"
+            alt="phone"
+          />
           <div class="adv__text">
             <p class="adv__desc">Всегда будьте в курсе последних новостей!</p>
-            <p class="adv__comment">Установите мобильное приложение NAMANGANLIKLAR24
-                и все новости в вашем кармане!</p>
-            
+            <p class="adv__comment">
+              Установите мобильное приложение NAMANGANLIKLAR24 и все новости в
+              вашем кармане!
+            </p>
           </div>
 
           <div class="adv__img">
@@ -413,43 +456,75 @@
       </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="footer__head">
-                <img class="footer__logo" src="./img/NAMANGANLIKLAR24.svg" alt="logo">
-                <div class="footer__box">
-                    <p class="footer__head-text">Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых последних новостей:</p>
-                    <a class="footer_link" href="#">
-                        <img src="./img/cib_telegram.svg" alt="icon__telegram">Подписаться
-                    </a>
-                </div>
-            </div>
-            <hr class="footer__line">
-            <div class="footer__info">
-                <div class="footer__left">
-                    <h5 class="left__title">О сайте</h5>
-                    <p class="left__text">Воспроизводство, копирование, тиражирование, распростране ние и иное использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного разрешения редакции.
-                    </p>
-                </div>
-                <div class="information">
-                    <ul class="information__list">
-                        <li class="information__item"><a class="information__link" href="">Информация о сайте</a></li>
-                        <li class="information__item"><a class="information__link" href="">Напишите нам  </a></li>
-                        <li class="information__item"><a class="information__link" href="">Реклама </a></li>
-                        <li class="information__item"><a class="information__link" href="">Прислать новость</a></li>
-                    </ul>
-                </div>
-                <div class="information">
-                    <ul class="information__list">
-                        <li class="information__item"><a class="information__link" href="">Использование материалов</a></li>
-                        <li class="information__item">
-                            <a class="information__link" href="">Темы дня</a></li>
-                            
-                        <li class="information__item"><a class="information__link" href="">Наша команда</a></li>
-                    </ul>
-                </div>
-            </div>
-            
+      <div class="container">
+        <div class="footer__head">
+          <img
+            class="footer__logo"
+            src="./img/NAMANGANLIKLAR24.svg"
+            alt="logo"
+          />
+          <div class="footer__box">
+            <p class="footer__head-text">
+              Подписывайтесь на наш канал в Telegram и будьте всегда в курсе
+              самых последних новостей:
+            </p>
+            <label for="modal__check">
+              <a class="footer_link">
+                <img
+                  width="25"
+                  height="20"
+                  src="./img/cib_telegram.svg"
+                  alt="icon__telegram"
+                />Подписаться
+              </a>
+            </label>
+          </div>
         </div>
+        <hr class="footer__line" />
+        <div class="footer__info">
+          <div class="footer__left">
+            <h5 class="left__title">О сайте</h5>
+            <p class="left__text">
+              Воспроизводство, копирование, тиражирование, распростране ние и
+              иное использование информации с сайта «NAMANGANLIKLAR24.UZ»
+              возможно только с предварительного письменного разрешения
+              редакции.
+            </p>
+          </div>
+          <div class="information">
+            <ul class="information__list">
+              <li class="information__item">
+                <a class="information__link" href="#">Информация о сайте</a>
+              </li>
+              <li class="information__item">
+                <a class="information__link" href="#">Напишите нам </a>
+              </li>
+              <li class="information__item">
+                <a class="information__link" href="#">Реклама </a>
+              </li>
+              <li class="information__item">
+                <a class="information__link" href="#">Прислать новость</a>
+              </li>
+            </ul>
+          </div>
+          <div class="information">
+            <ul class="information__list">
+              <li class="information__item">
+                <a class="information__link" href="#"
+                  >Использование материалов</a
+                >
+              </li>
+              <li class="information__item">
+                <a class="information__link" href="">Темы дня</a>
+              </li>
+
+              <li class="information__item">
+                <a class="information__link" href="">Наша команда</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

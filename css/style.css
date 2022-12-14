@@ -7,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
 }
@@ -86,7 +86,7 @@ strong {
   padding: 6px;
   border-radius: 5px;
 }
-.lang__select select{
+.lang__select select {
   appearance: none;
   padding-left: 5px;
   margin-top: 5px;
@@ -112,6 +112,7 @@ option {
   gap: 7px;
   padding: 10px 12px 10px 10px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .header__nav {
@@ -138,6 +139,98 @@ option {
 .header__advertising {
   margin-top: 18px;
   padding-bottom: 25px;
+}
+
+.modal__check,
+.modal__none{
+  display: none;
+}
+
+
+
+.modal__check:checked ~ .modal {
+  display: flex;
+}
+
+.modal {
+  position: fixed;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(68, 81, 102, 0.24);
+}
+
+.modal__wrapper {
+  position: relative;
+  
+  width: 800px;
+  padding: 46px 38px 32px 78px;
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.modal__close{
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  display: flex;
+}
+
+.modal__close span{
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  background: #BABFC2;
+  cursor: pointer;
+}
+
+.modal__close span:nth-child(1){
+  transform: rotate(45deg);
+}
+
+.modal__close span:nth-child(2){
+  transform: rotate(-45deg);
+}
+
+.modal__text {
+  width: 658px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+  text-align: center;
+  color: #295093;
+}
+
+.modal__btn {
+  padding: 15px 19px 15px 15px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #ffffff;
+  background: linear-gradient(90deg, #1e96c8 15.07%, #37aee2 85.96%);
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.modal__btn:hover {
+  background: linear-gradient(-90deg, #057bae 18.07%, #3ca0ca 87.96%);
+  transition: all 0.5s linear;
+}
+
+.modal__btn:active{
+  background: linear-gradient(90deg, #41c0f6 18.07%, #3ca0ca 87.96%);
 }
 
 .covid__info {
@@ -501,6 +594,7 @@ hr {
 
   padding: 9px 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 .footer__line {
   background: #133c82;
@@ -602,10 +696,10 @@ input {
   line-height: 21px;
   color: #ffffff;
 }
-.page__content{
+.page__content {
   position: relative;
 }
-.namanganliklar{
+.namanganliklar {
   position: absolute;
   top: 50px;
   right: 0;
@@ -614,10 +708,10 @@ input {
 
   width: 550px;
   box-shadow: -3px 10px 8px 9px rgba(57, 57, 57, 0.25);
-  border: 2px solid #BCC3CD;
+  border: 2px solid #bcc3cd;
   border-radius: 5px;
 }
-.namanganliklar__case{
+.namanganliklar__case {
   display: flex;
   justify-content: space-between;
 }
@@ -640,22 +734,22 @@ input {
   line-height: 21px;
   color: #888888;
 }
-.email__link{
+.email__link {
   margin-left: 50px;
 }
-.namanganliklar__links{
+.namanganliklar__links {
   display: flex;
   flex-direction: column;
   width: 250px;
 }
-.social__media{
+.social__media {
   margin-left: 105px;
   margin-top: 40px;
 }
-.social__links{
+.social__links {
   padding-left: 13px;
 }
-.namanganliklar__tg{
+.namanganliklar__tg {
   background-color: #295093;
   display: flex;
   align-items: center;
@@ -672,9 +766,13 @@ input {
   border-radius: 5px;
   width: 140px;
 }
-.stores{
+.stores {
   margin-left: 15px;
   margin-top: 25px;
   display: flex;
   gap: 10px;
+}
+
+.modal {
+  display: none;
 }
